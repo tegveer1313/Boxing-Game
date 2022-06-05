@@ -384,6 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac476f5fc01bb7469954f8f80e7d494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: {fileID: 0}
   movementInput: {x: 0, y: 0}
   leftPunchInput: 0
   rightPunchInput: 0
@@ -393,7 +394,6 @@ MonoBehaviour:
   blockInput: 0
   verticalInput: 0
   horizontalInput: 0
-  damageAmount: 2
 --- !u!114 &2299067085369708792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1292,6 +1292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7381593444759408326}
   - component: {fileID: 3047165347588493254}
+  - component: {fileID: 8917889847087867657}
   m_Layer: 0
   m_Name: Underwear
   m_TagString: Untagged
@@ -1368,6 +1369,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.11754433, y: -0.016269408, z: 0.000000007450581}
     m_Extent: {x: 0.13464376, y: 0.16441625, z: 0.22864053}
   m_DirtyAABB: 0
+--- !u!114 &8917889847087867657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122953800220200413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b323f757fce61840a7ec789845e90bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 0}
+  playersList:
+  - material: {fileID: 2100000, guid: 505adbb0187df8348a3f9a21c9517952, type: 2}
+  - material: {fileID: 2100000, guid: 2583cee28f7049542a6204d47d790654, type: 2}
+  - material: {fileID: 2100000, guid: 2cab8a281f5aa7548a3e64aaa0a6166f, type: 2}
+  - material: {fileID: 2100000, guid: 7be13b62c5183734ba463bb993ad40dd, type: 2}
 --- !u!1 &2208355312659551679
 GameObject:
   m_ObjectHideFlags: 0
