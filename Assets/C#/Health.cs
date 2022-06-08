@@ -21,6 +21,9 @@ public class Health : MonoBehaviourPunCallbacks, IPunObservable
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
+        if (photonView.IsMine)
+        {
+            health -= damage;
+        }
     }
 }

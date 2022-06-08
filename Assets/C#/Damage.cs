@@ -10,7 +10,7 @@ public class Damage : MonoBehaviour
 
         if (enemyHealth)
         {
-            //do damage
+            Debug.Log("Enemy Hit");
             enemyHealth.TakeDamage(damageAmount);
         }
     }

@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: -2390884528669498480}
   - component: {fileID: -871794187904425176}
   - component: {fileID: 8134117647457637011}
+  - component: {fileID: 4483030139126177663}
   m_Layer: 0
   m_Name: HumanMale_Character_FREE
   m_TagString: Untagged
@@ -535,6 +536,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+--- !u!114 &4483030139126177663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529880148251182713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa93e08e9b14d419066c88741727ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 2
 --- !u!1 &888801787283495912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,6 +1307,7 @@ GameObject:
   - component: {fileID: 7381593444759408326}
   - component: {fileID: 3047165347588493254}
   - component: {fileID: 8917889847087867657}
+  - component: {fileID: 4167038292736791282}
   m_Layer: 0
   m_Name: Underwear
   m_TagString: Untagged
@@ -1387,6 +1402,28 @@ MonoBehaviour:
   - material: {fileID: 2100000, guid: 2583cee28f7049542a6204d47d790654, type: 2}
   - material: {fileID: 2100000, guid: 2cab8a281f5aa7548a3e64aaa0a6166f, type: 2}
   - material: {fileID: 2100000, guid: 7be13b62c5183734ba463bb993ad40dd, type: 2}
+--- !u!114 &4167038292736791282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122953800220200413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &2208355312659551679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,7 +1901,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5433960428284521844}
   - component: {fileID: 2299067085405200794}
-  - component: {fileID: 4536397159918272578}
   m_Layer: 0
   m_Name: MiddleFinger2_L
   m_TagString: Untagged
@@ -1900,19 +1936,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.13
   m_Center: {x: 0.05, y: 0, z: 0}
---- !u!114 &4536397159918272578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2929437409556917649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82aa93e08e9b14d419066c88741727ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 2
 --- !u!1 &2957068526084599332
 GameObject:
   m_ObjectHideFlags: 0
@@ -5007,7 +5030,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5697265227564738551}
   - component: {fileID: 2299067086095360674}
-  - component: {fileID: 3813981195220637949}
   m_Layer: 0
   m_Name: MiddleFinger2_R
   m_TagString: Untagged
@@ -5043,19 +5065,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.13
   m_Center: {x: -0.05, y: 0, z: 0}
---- !u!114 &3813981195220637949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8059784741051236793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82aa93e08e9b14d419066c88741727ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 2
 --- !u!1 &8091538833352081370
 GameObject:
   m_ObjectHideFlags: 0
