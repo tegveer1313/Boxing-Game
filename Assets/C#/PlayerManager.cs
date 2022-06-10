@@ -5,6 +5,7 @@ public class PlayerManager : MonoBehaviour
 {
     InputManager inputManager;
     PlayerMotion playerMotion;
+    Timer timer;
 
     PhotonView photonView;
 
@@ -12,6 +13,7 @@ public class PlayerManager : MonoBehaviour
     {
         inputManager = GetComponent<InputManager>();
         playerMotion = GetComponent<PlayerMotion>();
+        timer = GetComponent<Timer>();
         photonView = GetComponent<PhotonView>();
     }
 
@@ -27,7 +29,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (photonView.IsMine)
         {
-            playerMotion.AllMovement();
+          playerMotion.AllMovement();
         }
     }
 }
