@@ -5,6 +5,7 @@ public class PlayerManager : MonoBehaviour
 {
     InputManager inputManager;
     PlayerMotion playerMotion;
+    PlayerType playerType;
     Timer timer;
 
     PhotonView photonView;
@@ -13,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     {
         inputManager = GetComponent<InputManager>();
         playerMotion = GetComponent<PlayerMotion>();
+        playerType = GetComponent<PlayerType>();
         timer = GetComponent<Timer>();
         photonView = GetComponent<PhotonView>();
     }

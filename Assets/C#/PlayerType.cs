@@ -15,7 +15,6 @@ public class PlayerType : MonoBehaviour
     {
         renderer = GetComponent<SkinnedMeshRenderer>();
         CreatePlayer();
-
     }
 
     public void CreatePlayer()
