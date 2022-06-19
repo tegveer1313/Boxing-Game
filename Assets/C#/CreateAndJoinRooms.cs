@@ -1,3 +1,4 @@
+using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 
@@ -7,8 +8,15 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     public InputField joinInput;
 
     public void CreateRoom()
-    {
-        PhotonNetwork.CreateRoom(createInput.text);
+    {  
+        if (createInput != null)
+        {
+            PhotonNetwork.CreateRoom(createInput.text);
+        }
+        else if (createInput == null)
+        {
+            Debug.Log("Please Enter some values");
+        }
     }
 
     public void JoinRoom()

@@ -20,7 +20,10 @@ public class InputManager : MonoBehaviour
     public float horizontalInput;
 
 
-    private float moveAmount;
+    private float moveHorizontal;
+    private float moveVertical;
+    private bool tran;
+
 
 
     private void Awake()
@@ -78,9 +81,19 @@ public class InputManager : MonoBehaviour
     {
         verticalInput = movementInput.y;
         horizontalInput = movementInput.x;
-        moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
+        moveHorizontal = horizontalInput;
+        moveVertical = Mathf.Clamp01(Mathf.Abs(verticalInput));
 
-        animaterManager.UpdateAnimatorValue(0, moveAmount);
+        if(moveHorizontal == 0)
+        {
+            tran = true;
+        }
+        else if(moveHorizontal != 0)
+        {
+            tran = false;
+        }
+
+        animaterManager.UpdateAnimatorValue(tran, moveHorizontal, moveVertical);
     }
 
     void Punched()

@@ -3,20 +3,21 @@ using UnityEngine;
 public class AnimaterManager : MonoBehaviour
 {
     Animator animator;
-    int horizontal;
+    //int horizontal;
     int vertical;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        horizontal = Animator.StringToHash("Horizontal");
+        //horizontal = Animator.StringToHash("Horizontal");
         vertical = Animator.StringToHash("Vertical");
     }
 
 
-    public void UpdateAnimatorValue(float horizontalMovement, float verticalMovement)
+    public void UpdateAnimatorValue(bool tran, float horizontalMovement, float verticalMovement)
     {
-        animator.SetFloat(horizontal, horizontalMovement, 0.1f, Time.deltaTime);
+        animator.SetBool("Tran", tran);
+        animator.SetFloat("Horizontal", horizontalMovement);
         animator.SetFloat(vertical, verticalMovement, 0.1f, Time.deltaTime);
     }
 

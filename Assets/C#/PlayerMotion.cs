@@ -20,7 +20,7 @@ public class PlayerMotion : MonoBehaviour
     public void AllMovement()
     {
         HandelMovement();
-        HandelRotation();
+        //HandelRotation();
     }
 
     private void HandelMovement()
